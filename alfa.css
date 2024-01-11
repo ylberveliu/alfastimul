@@ -1,0 +1,48 @@
+#alphabet {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+
+    div {
+        border: 1px solid #ccc;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    span {
+        font-size: 24px;
+    }
+}
+
+#sentence {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    div.letter {
+        width: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span.box {
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    }
+
+    div.space {
+        width: 20px;
+    }
+
+    span {
+        font-size: 32px;
+    }
+}
+
+@media print {
+    section {
+        display: none;
+    }
+}
